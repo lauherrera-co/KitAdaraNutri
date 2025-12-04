@@ -346,6 +346,150 @@
             50% { opacity: 0.7; }
         }
         
+        /* Recipes Section */
+        .recipes-section {
+            background: linear-gradient(135deg, #f8e9d8 0%, #f5d5b8 100%);
+            padding: 80px 20px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #6b5344;
+            margin-top: -30px;
+            margin-bottom: 50px;
+            font-style: italic;
+        }
+        
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .recipe-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(139, 69, 19, 0.2);
+        }
+        
+        .recipe-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #f0e6d8;
+        }
+        
+        .recipe-icon {
+            font-size: 3em;
+        }
+        
+        .recipe-header h3 {
+            color: #8B4513;
+            font-size: 1.5em;
+            line-height: 1.2;
+        }
+        
+        .recipe-content h4 {
+            color: #8B4513;
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+        
+        .recipe-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .recipe-content li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .recipe-content li::before {
+            content: "•";
+            color: #d4a574;
+            font-size: 1.5em;
+            position: absolute;
+            left: 5px;
+            top: 2px;
+        }
+        
+        .recipe-cta {
+            background: white;
+            border-radius: 25px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 0 15px 50px rgba(139, 69, 19, 0.15);
+        }
+        
+        .recipe-bonus {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .bonus-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            color: white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+        }
+        
+        .recipe-bonus h3 {
+            color: #8B4513;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        
+        .bonus-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .bonus-item {
+            background: #f9f4ef;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .bonus-item span {
+            font-size: 3em;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .bonus-item p {
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+        
+        .bonus-item strong {
+            color: #8B4513;
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
         /* FAQ Section */
         .faq-section {
             background: white;
@@ -657,6 +801,132 @@
             </div>
         </div>
     </section>
+    
+    
+    <!-- Recipes/Usage Section -->
+    <section class="recipes-section">
+        <div class="container">
+            <h2 class="section-title">¿Cómo Usar Estos Productos en tu Cocina?</h2>
+            <p class="section-subtitle">Ideas prácticas para toda la familia • Desde bebés hasta adultos</p>
+            
+            <div class="recipes-grid">
+                <!-- Manteca de Cerdo -->
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <span class="recipe-icon">🥓</span>
+                        <h3>Manteca de Cerdo Pura</h3>
+                    </div>
+                    <div class="recipe-content">
+                        <h4>Para Bebés:</h4>
+                        <ul>
+                            <li>Papillas y purés (aumenta densidad calórica)</li>
+                            <li>Vegetales al vapor con un toque de manteca</li>
+                            <li>Primera comida: huevo revuelto suavecito</li>
+                        </ul>
+                        <h4>Para Toda la Familia:</h4>
+                        <ul>
+                            <li>Huevos fritos con bordes crujientes 🍳</li>
+                            <li>Vegetales salteados (realza el sabor natural)</li>
+                            <li>Sofritos y guisos tradicionales</li>
+                            <li>Arepas, empanadas y horneados</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Crema de Maní + Choco -->
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <span class="recipe-icon">🥜</span>
+                        <h3>Crema de Maní</h3>
+                    </div>
+                    <div class="recipe-content">
+                        <h4>Para Bebés:</h4>
+                        <ul>
+                            <li>Untada en pancitos integrales</li>
+                            <li>Mezclada en avena o yogur natural</li>
+                            <li>Como dip para bastones de manzana</li>
+                        </ul>
+                        <h4>Para Toda la Familia:</h4>
+                        <ul>
+                            <li>Tostadas integrales para el desayuno 🍞</li>
+                            <li>Smoothies (le da cremosidad y proteína)</li>
+                            <li>Dip para frutas: banano, fresas, manzana</li>
+                            <li>Directamente de la cuchara (no juzgamos 😉)</li>
+                            <li>En pancakes o waffles caseros</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mix de Semillas -->
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <span class="recipe-icon">🌰</span>
+                        <h3>Mix de Semillas Molido</h3>
+                    </div>
+                    <div class="recipe-content">
+                        <h4>Para Bebés:</h4>
+                        <ul>
+                            <li><strong>Truco BLW:</strong> "Apana" frutas resbalosas (aguacate, mango)</li>
+                            <li>Mezclado en papillas para agregar nutrientes</li>
+                            <li>Espolvoreado en vegetales cocidos</li>
+                        </ul>
+                        <h4>Para Toda la Familia:</h4>
+                        <ul>
+                            <li>Avena o yogur del desayuno 🥣</li>
+                            <li>Ensaladas (topping crujiente)</li>
+                            <li>Smoothies y batidos</li>
+                            <li>Bowls de frutas o açaí</li>
+                            <li>Masa de pancakes o preparaciones horneadas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-cta">
+                <div class="recipe-bonus">
+                    <span class="bonus-badge">🎁 BONUS</span>
+                    <h3>Al comprar tu Trío recibes:</h3>
+                    <div class="bonus-items">
+                        <div class="bonus-item">
+                            <span>📖</span>
+                            <p><strong>E-book Recetario Familiar</strong><br>20+ recetas para usar tus productos desde el día 1</p>
+                        </div>
+                        <div class="bonus-item">
+                            <span>👶</span>
+                            <p><strong>Guía de Alimentación Complementaria</strong><br>Cómo incorporar grasas saludables en el BLW</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section" id="comprar">
+        <div class="container">
+            <h2>🎁 Invierte en lo que Realmente Importa</h2>
+            <p style="font-size: 1.3em; margin: 20px 0;">El regalo perfecto para tu familia</p>
+            
+            <div class="price">$60.000 COP</div>
+            <p class="price-subtext">3 Frascos de Vidrio • 170ml c/u • Caja Premium Kraft</p>
+            
+            <ul class="bonus-list">
+                <li>✅ 3 Frascos de vidrio de 170ml</li>
+                <li>✅ Presentación premium en caja kraft</li>
+                <li>🎁 BONUS: E-book Recetario Familiar (Digital)</li>
+                <li>🎁 BONUS: Guía de Alimentación Complementaria (Digital)</li>
+            </ul>
+            
+            <a href="https://api.whatsapp.com/send?phone=573180072696&text=*Yo%20quiero*%20%F0%9F%98%83" class="cta-primary cta-secondary">Escribe "YO QUIERO" por WhatsApp</a>
+            
+            <p class="urgency">⚠️ Solo 20 unidades disponibles en preventa</p>
+            
+            <p style="margin-top: 40px; font-size: 1.2em; font-style: italic;">
+                No vendemos comida. Vendemos salud.<br>
+                Una forma tangible de demostrar amor: alimentar bien a los tuyos.
+            </p>
+        </div>
+    </section>
 
     <!-- FAQ Section -->
     <section class="faq-section">
@@ -738,34 +1008,7 @@
             </div>
         </div>
     </section>
-
-    <!-- CTA Final -->
-    <section class="cta-section" id="comprar">
-        <div class="container">
-            <h2>🎁 Invierte en lo que Realmente Importa</h2>
-            <p style="font-size: 1.3em; margin: 20px 0;">El regalo perfecto para tu familia</p>
-            
-            <div class="price">$60.000 COP</div>
-            <p class="price-subtext">3 Frascos de Vidrio • 170ml c/u • Caja Premium Kraft</p>
-            
-            <ul class="bonus-list">
-                <li>✅ 3 Frascos de vidrio de 170ml</li>
-                <li>✅ Presentación premium en caja kraft</li>
-                <li>🎁 BONUS: E-book Recetario Familiar (Digital)</li>
-                <li>🎁 BONUS: Guía de Alimentación Complementaria (Digital)</li>
-            </ul>
-            
-            <a href="https://api.whatsapp.com/send?phone=573180072696&text=*Yo%20quiero*%20%F0%9F%98%83" class="cta-primary cta-secondary">Escribe "YO QUIERO" por WhatsApp</a>
-            
-            <p class="urgency">⚠️ Solo 20 unidades disponibles en preventa</p>
-            
-            <p style="margin-top: 40px; font-size: 1.2em; font-style: italic;">
-                No vendemos comida. Vendemos salud.<br>
-                Una forma tangible de demostrar amor: alimentar bien a los tuyos.
-            </p>
-        </div>
-    </section>
-
+    
     <!-- Footer -->
     <footer>
         <p>Trío Delicia Real</p>
